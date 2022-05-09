@@ -38,27 +38,36 @@ header p {
 }
 
 .flexContainer {
-  display: flex;
-  width: 33%;
-  margin: auto;
+  display: grid;
+  gap: 50px;
   padding: 80px;
   grid-template-rows: 300px 300px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
   "skillOnePic skillTwoPic skillThreePic"
   "skillOne skillTwo skillThree";
-  justify-content: center;
-  text-align: center;
-  align-items: baseline;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+
 
 }
 
 .mySkills h1{
-  text-align: center;
+  display: flex;
+  width: 33%;
+  margin: auto;
+  padding: 80px;
+  
 }
 
 .myWork h1{
-  text-align: center;
+  display: flex;
+  width: 33%;
+  margin: auto;
+  padding: 80px;
+  
 }
 
 button {
@@ -82,6 +91,8 @@ footer li {
   padding: 0px 7px;
 }
 
+
+
 .workGrid {
 display: grid;
 gap: 50px;
@@ -93,8 +104,9 @@ grid-template-areas:
 "example3Pic example3Content";
 justify-content: space-evenly;
 max-width: 1000px;
-margin: 0 auto;
-padding: px;
+margin: auto;
+padding: 10px;
+
 }
 
 .viewProjectsButton {
@@ -120,14 +132,15 @@ padding: px;
 
  .flexContainer {
   grid-template-rows: 300px 300px 300px 300px 300px 300px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: 
-  "skillOnePic"
+  "skillOnePic" 
   "skillOne"
   "skillTwoPic" 
-  "skillTwo"
-  "skillThreePic"
+  "skillTwo"  
+  "skillThreePic" 
   "skillThree";
+  
  }
   
 }
