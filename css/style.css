@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+}
+
+* { outline: 1px solid red; }
+
+header {
+  background-color: #373738;
+  padding: 15px;
+}
+header ul {
+  float: right;
+  color: white;
+}
+header li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+header p {
+  display: inline-block;
+}
+.heroImg {
+  background-color: #EBEBEB;
+  padding: 100px 15px;
+}
+
+
+
+.content {
+  outline: 1px solid red;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.uxSkills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: baseline;
+
+}
+button {
+  padding: 15px;
+  background-color: #373738;
+  color: white;
+  font-size: 15px;
+  border-radius: 4px;
+}
+footer {
+  background-color: #373738;
+  padding: 5px;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding-left: 5px;
+}
+footer li {
+  display: inline-block;
+  padding: 0px 7px;
+}
+
+.example1, .example1Pic, .example1Content {
+  display: flex;
+  height: 300px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.example2, .example2Pic, .example2Content {
+  display: flex;
+  height: 300px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.example3, .example3Pic, .example3Content {
+  display: flex;
+  height: 300px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
