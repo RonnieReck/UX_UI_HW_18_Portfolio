@@ -19,9 +19,11 @@ header li {
 header p {
   display: inline-block;
 }
+
 .heroImg {
-  background-color: #EBEBEB;
-  padding: 100px 15px;
+  padding: 10px 15px;
+  background-image: url("images/background.png")
+  
 }
 
 
@@ -35,14 +37,30 @@ header p {
   text-align: center;
 }
 
-.uxSkills {
+.flexContainer {
   display: flex;
-  flex-direction: row;
+  width: 33%;
+  margin: auto;
+  padding: 80px;
+  grid-template-rows: 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "skillOnePic skillTwoPic skillThreePic"
+  "skillOne skillTwo skillThree";
   justify-content: center;
   text-align: center;
   align-items: baseline;
 
 }
+
+.mySkills h1{
+  text-align: center;
+}
+
+.myWork h1{
+  text-align: center;
+}
+
 button {
   padding: 15px;
   background-color: #373738;
@@ -64,23 +82,52 @@ footer li {
   padding: 0px 7px;
 }
 
-.example1, .example1Pic, .example1Content {
-  display: flex;
-  height: 300px;
-  flex-wrap: wrap;
-  align-items: flex-start;
+.workGrid {
+display: grid;
+gap: 50px;
+grid-template-rows: 300px 300px 300px;
+grid-template-columns: 1fr 1fr;
+grid-template-areas: 
+"example1Pic example1Content"
+"example2Pic example2Content"
+"example3Pic example3Content";
+justify-content: space-evenly;
+max-width: 1000px;
+margin: 0 auto;
+padding: px;
 }
 
-.example2, .example2Pic, .example2Content {
-  display: flex;
-  height: 300px;
-  flex-wrap: wrap;
-  align-items: flex-start;
+.viewProjectsButton {
+  justify-content: center;
+
 }
 
-.example3, .example3Pic, .example3Content {
-  display: flex;
-  height: 300px;
-  flex-wrap: wrap;
-  align-items: flex-start;
+
+
+@media only screen and (max-width:600) {
+
+ .workGrid {
+   grid-template-rows: 300px 300px 300px 300px 300px 300px;
+   grid-template-columns: 1fr 1fr;
+   grid-template-areas: 
+   "example1Pic" 
+   "example1Content"
+   "example2Pic"
+   "example2Content"
+   "example3Pic"
+   "example3Content";
+ } 
+
+ .flexContainer {
+  grid-template-rows: 300px 300px 300px 300px 300px 300px;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "skillOnePic"
+  "skillOne"
+  "skillTwoPic" 
+  "skillTwo"
+  "skillThreePic"
+  "skillThree";
+ }
+  
 }
